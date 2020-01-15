@@ -1,5 +1,5 @@
 ---
-title: First presentation test
+title: From 2020-01-08 to 2020-01-17
 separator: <!--s-->
 verticalSeparator: <!--v-->
 theme: white
@@ -8,43 +8,50 @@ revealOptions:
 ---
 
 
-# Slide 1 
 
-Content of slide 1.
+# Progress update 2020 Jan 8 - 2020 Jan 17
+
+<!--s-->
+
+## B2 Rig Upgrade
+
+Stimulus computer: 
+
+ - DDR4 RAM 
+ - 
 
 
 <!--s-->
 
+# 2P Analysis
 
-# Slide 2 
+<!--s-->
 
-content of slide 2
+
+## 2P analysis: finding neurons that respond to audio 
 
 
 <!--s-->
 
-# Some mathematics
-
-
-$E = mc^2$
-
-Note that you need four slashes to do [matrices](https://github.com/MacDownApp/macdown/issues/535)
-
-$$
-\begin{equation}
-\begin{bmatrix}
-a & b \\\\
-c & d
-\end{bmatrix}
-\end{equation}
-$$
-
-$$
-\int_0^3\left(\frac{x^3}4-2x^2-e^x\right)dx
-$$
-
+## 2P analysis: Decoding video 
 
 <!--s-->
+
+## 2P analysis: Decoding audio 
+
+<!--s-->
+
+# Ephys Analysis 
+
+<!--s-->
+
+## Classifying cells 
+
+<iframe width="100%" height="600pt" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTk1w56bgGRBI4aoc4njVzvys9-WC60yz7livo-JODzwurYubD0fk5pxAZ6lnBqduOSZeu2rrOMwB4P/pubhtml?widget=true&amp; headers=false";></iframe>
+
+<!--s-->
+
+
 
 # Including a video 
 
@@ -53,9 +60,17 @@ $$
 
 <!--s-->
 
-# Including an interactive plot 
+## $f(a_{l}v_l) = f(a_l) + f(v_l)?$
 
-<iframe frameborder="0" width="600pt" height="600pt" src="https://timothysit.github.io/reveal-js-hello-world/figures/linked_selection_subsets.html"></iframe>
+<iframe frameborder="0" width="700pt" height="700pt" src="https://timothysit.github.io/reveal-js-hello-world/figures/linked_selection_subsets.html"></iframe>
+
+<!--v-->
+
+## Cell 89
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-3/exp-21/brain-area-2/exp-21/sig_idx_3_combined_exp_cell_idx_89.png) <!-- .element height="70%" width="70%"; -->
+
+
 
 <!--s-->
 
