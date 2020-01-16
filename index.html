@@ -38,6 +38,10 @@ Stimulus computer:
 
 ## 2P analysis: finding neurons that respond to audio 
 
+TS003-plane-7-cell-24
+
+
+
 
 </script></section><section  data-markdown><script type="text/template">
 
@@ -59,12 +63,31 @@ Stimulus computer:
 
 </script></section><section  data-markdown><script type="text/template">
 
+## Main cell types 
 
+ 1. Go sustained firing 
+	 - eg. subject-2-brain-loc-2-cell-20
+ 2. No-go enhanced cells
+    - eg. subject-2-brain-loc-3-cell-5
+	- a lot also seems to respond to audio in passive condition 
+ 3. Trial-onset neurons 
+ 4. Movement / choice-related neurons that also respond to audio in passive condition 
+ 5. Trial/audio onset suppressed cells 
+    - suppressed: subject-3-brain-loc-1-cell-48
+	- enhanced w/ sharp peak: subject-3-brain-loc-1-cell-53
+ 
+ 
+ 
 
-# Including a video 
+## Some rare by intesting cell types
 
-
-<iframe frameborder="0" width="100%" height="500pt" src="https://www.youtube.com/embed/Do-wDPoC6GM"></iframe>
+ 1. Audio-visual interaction 
+	 - subject-2-brain-loc-2-cell-80
+	 - subject-2-brain-loc-3-cell-1
+ ![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-2/brain-area-3/exp-15/sig_idx_4_combined_exp_cell_idx_1.png) <!-- .element height="70%" width="70%"; -->
+ 
+ 2. Purely audio neurons
+  - subject-3-brain-loc-2-cell-21
 
 </script></section><section ><section data-markdown><script type="text/template">
 
@@ -80,7 +103,32 @@ Stimulus computer:
 
 
 
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+## First attempt at neural trajectories 
+
+### Without PCA 
+
+
+
+
+</script></section><section data-markdown><script type="text/template">
+
+### With PCA 
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_PCA_20.png)
+
+
+</script></section><section data-markdown><script type="text/template">
+
+### With PCA + Whitening 
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_PCA_20_whiten.png)
+
 </script></section></section><section  data-markdown><script type="text/template">
+
+
+
 
 # Lists 
 
@@ -110,46 +158,6 @@ Stimulus computer:
 
 </script></section><section  data-markdown><script type="text/template">
 
-# Second attempt at two columns 
-
-<section>
-  <div style="text-align: left; float: left;">
-    <p data-markdown>- This is my first left element</p>
-    <p data-markdown>- This is my second left element</p>
-    <!-- more Elements -->
-  </div>
-
-  <div style="text-align: right; float: right;">
-    <p data-markdown>- This is my first right element</p>
-    <p data-markdown>- This is my second rightelement</p>
-    <!-- more Elements -->
-  </div>
-</section>
-
-</script></section><section  data-markdown><script type="text/template">
-
-# Third attempt at two columns 
-
-<section data-markdown>
-    <h3>Doing two-column (this headline still full-width)</h3>
-
-    <div class='multiCol'>
-        <div class='col'>
-            Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur.
-        </div>
-        <div class='col'>
-            Qua de causa Helvetii quoque reliquos Gallos virtute praecedunt, quod fere cotidianis proeliis cum Germanis contendunt, cum aut suis finibus eos prohibent aut ipsi in eorum finibus bellum gerunt.
-        </div>
-    </div>
-    And simply more regular full-width text in the following. But hey, there is also:
-    <div class='multiCol'>
-        <div class='col'>Also works for 3 columns...</div>
-        <div class='col'>...as we can show in...</div>
-        <div class='col'>...this example here.</div>
-    </div>
-</section>
-
-</script></section><section  data-markdown><script type="text/template">
 
 # Embedding raw html 
 
@@ -187,11 +195,7 @@ Stimulus computer:
 }
 </style>
 
-</script></section><section  data-markdown><script type="text/template">
 
-# Good references
-
-- [reveal-md  with custom css at the end](https://medium.com/@mandieq/beautiful-presentations-from-markdown-who-knew-it-could-be-so-easy-d279aa7f787a)
 </script></section></div>
     </div>
 
