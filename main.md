@@ -9,6 +9,7 @@ revealOptions:
 
 
 
+
 # Progress update 2020 Jan 8 - 2020 Jan 17
 
 <!--s-->
@@ -33,17 +34,49 @@ Stimulus computer:
 TS003-plane-7-cell-24
 
 
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/audio-marignal-response-bar-chart/audio_marginal_reponse_cell_24.png) <!-- .element height="70%" width="100%"; -->
+
+<!--s-->
+
+### TS003-plane-7-cell-24
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/test-audio-video-pair-cell-24.png) <!-- .element height="70%" width="100%"; -->
 
 
 <!--s-->
 
-## 2P analysis: Decoding video 
+## 2P analysis: Decoding video and audio
+
+Simple SVM classifier with default parameters.
+Using about 400 cells from one plane.
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/av-classification/simple-svm-cv-split-classfication-accuracy.png) <!-- .element height="50%" width="50%"; -->
 
 <!--s-->
 
-## 2P analysis: Decoding audio 
+### Video decoding
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/av-classification/video-decoding-performance-diff-classifiers.png)
 
 <!--s-->
+
+### Audio decoding
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/av-classification/audio-decoding-performance-diff-classifiers.png)
+
+
+<!--s-->
+
+### Using all cells 
+
+Caveat: some planes weren't manually curated yet, so may be noisy.
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/av-classification/knn-classifier-w-diff-PCs-subject-TS003-exp-2.png) <!-- .element height="50%" width="80%"; -->
+
+
+
+<!--s-->
+
 
 # Ephys Analysis 
 
@@ -68,26 +101,43 @@ TS003-plane-7-cell-24
     - suppressed: subject-3-brain-loc-1-cell-48
 	- enhanced w/ sharp peak: subject-3-brain-loc-1-cell-53
  
- 
+ <!--s-->
+
  
 
-## Some rare by intesting cell types
+## Some rare but intesting cell types
 
- 1. Audio-visual interaction 
-	 - subject-2-brain-loc-2-cell-80
-	 - subject-2-brain-loc-3-cell-1
- ![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-2/brain-area-3/exp-15/sig_idx_4_combined_exp_cell_idx_1.png) <!-- .element height="70%" width="70%"; -->
+ <!--s-->
+
+### 1. Audio-visual interaction 
+
+eg. subject-2-brain-loc-2-cell-80
+ ![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-2/brain-area-3/exp-15/sig_idx_4_combined_exp_cell_idx_1.png) <!-- .element height="70%" width="70%"; margin-left="auto"; margin-right="auto" -->
  
- 2. Purely audio neurons
-  - subject-3-brain-loc-2-cell-21
+ <!--v-->
+ 
+subject-2-brain-loc-3-cell-1
+
+
+ 
+ <!--s-->
+ 
+### 2. Audio neurons with no movement response
+  
+subject-3-brain-loc-2-cell-21
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-3/exp-21/brain-area-2/exp-21/sig_idx_58_combined_exp_cell_idx_21.png) <!-- .element height="70%" width="70%"; margin-left="auto"; margin-right="auto" -->
+
+
+
 
 <!--s-->
 
 ## $f(a_{l}v_l) = f(a_l) + f(v_l)?$
 
-<iframe frameborder="0" width="700pt" height="700pt" src="https://timothysit.github.io/reveal-js-hello-world/figures/linked_selection_subsets.html"></iframe>
+<iframe frameborder="0" width="700pt" height="700pt" src="https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/linked_selection_subsets_stretch.html"></iframe>
 
-<!--v-->
+<!--s-->
 
 ## Cell 89
 
@@ -104,68 +154,51 @@ TS003-plane-7-cell-24
 
 
 
-<!--v-->
+<!--s-->
 
 ### With PCA 
 
-![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_PCA_20.png)
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_PCA_20.png) <!-- .element height="70%" width="70%"; -->
 
 
-<!--v-->
+<!--s-->
 
 ### With PCA + Whitening 
 
-![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_PCA_20_whiten.png)
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_PCA_20_whiten.png) <!-- .element height="70%" width="70%"; -->
 
 <!--s-->
 
+### Explained variance 
+
+<div id="left"> 
+
+#### Left choice
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/left_movement_matrix_PCA_explained_variance.png) <!-- .element height="70%" width="100%"; -->
+
+</div> 
+
+
+<div id="right"> 
+
+#### Right choice
+
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/right_movement_matrix_PCA_explained_variance.png) <!-- .element height="70%" width="100%"; -->
+
+</div> 
 
 
 
-# Lists 
-
-<div id="left">
-
-
-## Left column
-
-- Bullet 1
-- Bullet 2
-- Bullet 3 
-- Even [links](https://www.google.com)
-
-</div>
-
-<div id="right">
 
 
 
-## Right colum
 
-1. List
-2. List
-3. list 
-
-</div>
-
-<!--s-->
-
-
-# Embedding raw html 
-
-<iframe frameborder="0" width="100%" height="500pt">
-<section>
-    <script type="text/template">
-        ## Page title
-        <div>
-            A div with some text and a [link](http://hakim.se).
-        </div>
-    </script>
-</section>
-</iframe>
 
 
 <style>
+
 #left {
 	margin: 10px 0 15px 20px;
 	text-align: left;
@@ -185,6 +218,7 @@ TS003-plane-7-cell-24
 	font-size: 0.85em;
 	line-height: 1.5; 
 }
+
 </style>
 
 

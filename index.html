@@ -17,6 +17,7 @@
 
 
 
+
 # Progress update 2020 Jan 8 - 2020 Jan 17
 
 </script></section><section  data-markdown><script type="text/template">
@@ -38,16 +39,52 @@ Stimulus computer:
 
 ## 2P analysis: finding neurons that respond to audio 
 
+TS003-plane-7-cell-24
+
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/audio-marignal-response-bar-chart/audio_marginal_reponse_cell_24.png) <!-- .element height="70%" width="100%"; -->
 
 </script></section><section  data-markdown><script type="text/template">
 
-## 2P analysis: Decoding video 
+### TS003-plane-7-cell-24
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/test-audio-video-pair-cell-24.png) <!-- .element height="70%" width="100%"; -->
+
 
 </script></section><section  data-markdown><script type="text/template">
 
-## 2P analysis: Decoding audio 
+## 2P analysis: Decoding video and audio
+
+Simple SVM classifier with default parameters.
+Using about 400 cells from one plane.
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/av-classification/simple-svm-cv-split-classfication-accuracy.png) <!-- .element height="50%" width="50%"; -->
 
 </script></section><section  data-markdown><script type="text/template">
+
+### Video decoding
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/av-classification/video-decoding-performance-diff-classifiers.png)
+
+</script></section><section  data-markdown><script type="text/template">
+
+### Audio decoding
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/av-classification/audio-decoding-performance-diff-classifiers.png)
+
+
+</script></section><section  data-markdown><script type="text/template">
+
+### Using all cells 
+
+Caveat: some planes weren't manually curated yet, so may be noisy.
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/av-classification/knn-classifier-w-diff-PCs-subject-TS003-exp-2.png) <!-- .element height="50%" width="80%"; -->
+
+
+
+</script></section><section  data-markdown><script type="text/template">
+
 
 # Ephys Analysis 
 
@@ -59,20 +96,56 @@ Stimulus computer:
 
 </script></section><section  data-markdown><script type="text/template">
 
+## Main cell types 
+
+ 1. Go sustained firing 
+	 - eg. subject-2-brain-loc-2-cell-20
+ 2. No-go enhanced cells
+    - eg. subject-2-brain-loc-3-cell-5
+	- a lot also seems to respond to audio in passive condition 
+ 3. Trial-onset neurons 
+ 4. Movement / choice-related neurons that also respond to audio in passive condition 
+ 5. Trial/audio onset suppressed cells 
+    - suppressed: subject-3-brain-loc-1-cell-48
+	- enhanced w/ sharp peak: subject-3-brain-loc-1-cell-53
+ 
+ </script></section><section  data-markdown><script type="text/template">
+
+ 
+
+## Some rare but intesting cell types
+
+ </script></section><section ><section data-markdown><script type="text/template">
+
+### 1. Audio-visual interaction 
+
+eg. subject-2-brain-loc-2-cell-80
+ ![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-2/brain-area-3/exp-15/sig_idx_4_combined_exp_cell_idx_1.png) <!-- .element height="70%" width="70%"; margin-left="auto"; margin-right="auto" -->
+ 
+ </script></section><section data-markdown><script type="text/template">
+ 
+subject-2-brain-loc-3-cell-1
 
 
-# Including a video 
+ 
+ </script></section></section><section  data-markdown><script type="text/template">
+ 
+### 2. Audio neurons with no movement response
+  
+subject-3-brain-loc-2-cell-21
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-3/exp-21/brain-area-2/exp-21/sig_idx_58_combined_exp_cell_idx_21.png) <!-- .element height="70%" width="70%"; margin-left="auto"; margin-right="auto" -->
 
 
-<iframe frameborder="0" width="100%" height="500pt" src="https://www.youtube.com/embed/Do-wDPoC6GM"></iframe>
 
-</script></section><section ><section data-markdown><script type="text/template">
+
+</script></section><section  data-markdown><script type="text/template">
 
 ## $f(a_{l}v_l) = f(a_l) + f(v_l)?$
 
-<iframe frameborder="0" width="700pt" height="700pt" src="https://timothysit.github.io/reveal-js-hello-world/figures/linked_selection_subsets.html"></iframe>
+<iframe frameborder="0" width="700pt" height="700pt" src="https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/linked_selection_subsets_stretch.html"></iframe>
 
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 
 ## Cell 89
 
@@ -80,92 +153,60 @@ Stimulus computer:
 
 
 
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 
-# Lists 
+## First attempt at neural trajectories 
 
-<div id="left">
-
-
-## Left column
-
-- Bullet 1
-- Bullet 2
-- Bullet 3 
-- Even [links](https://www.google.com)
-
-</div>
-
-<div id="right">
+### Without PCA 
 
 
 
-## Right colum
-
-1. List
-2. List
-3. list 
-
-</div>
 
 </script></section><section  data-markdown><script type="text/template">
 
-# Second attempt at two columns 
+### With PCA 
 
-<section>
-  <div style="text-align: left; float: left;">
-    <p data-markdown>- This is my first left element</p>
-    <p data-markdown>- This is my second left element</p>
-    <!-- more Elements -->
-  </div>
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_PCA_20.png) <!-- .element height="70%" width="70%"; -->
 
-  <div style="text-align: right; float: right;">
-    <p data-markdown>- This is my first right element</p>
-    <p data-markdown>- This is my second rightelement</p>
-    <!-- more Elements -->
-  </div>
-</section>
 
 </script></section><section  data-markdown><script type="text/template">
 
-# Third attempt at two columns 
+### With PCA + Whitening 
 
-<section data-markdown>
-    <h3>Doing two-column (this headline still full-width)</h3>
-
-    <div class='multiCol'>
-        <div class='col'>
-            Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur.
-        </div>
-        <div class='col'>
-            Qua de causa Helvetii quoque reliquos Gallos virtute praecedunt, quod fere cotidianis proeliis cum Germanis contendunt, cum aut suis finibus eos prohibent aut ipsi in eorum finibus bellum gerunt.
-        </div>
-    </div>
-    And simply more regular full-width text in the following. But hey, there is also:
-    <div class='multiCol'>
-        <div class='col'>Also works for 3 columns...</div>
-        <div class='col'>...as we can show in...</div>
-        <div class='col'>...this example here.</div>
-    </div>
-</section>
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_PCA_20_whiten.png) <!-- .element height="70%" width="70%"; -->
 
 </script></section><section  data-markdown><script type="text/template">
 
-# Embedding raw html 
+### Explained variance 
 
-<iframe frameborder="0" width="100%" height="500pt">
-<section>
-    <script type="text/template">
-        ## Page title
-        <div>
-            A div with some text and a [link](http://hakim.se).
-        </div>
-    __SCRIPT_END__
-</section>
-</iframe>
+<div id="left"> 
+
+#### Left choice
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/left_movement_matrix_PCA_explained_variance.png) <!-- .element height="70%" width="100%"; -->
+
+</div> 
+
+
+<div id="right"> 
+
+#### Right choice
+
+
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/right_movement_matrix_PCA_explained_variance.png) <!-- .element height="70%" width="100%"; -->
+
+</div> 
+
+
+
+
+
+
+
 
 
 <style>
+
 #left {
 	margin: 10px 0 15px 20px;
 	text-align: left;
@@ -185,13 +226,10 @@ Stimulus computer:
 	font-size: 0.85em;
 	line-height: 1.5; 
 }
+
 </style>
 
-</script></section><section  data-markdown><script type="text/template">
 
-# Good references
-
-- [reveal-md  with custom css at the end](https://medium.com/@mandieq/beautiful-presentations-from-markdown-who-knew-it-could-be-so-easy-d279aa7f787a)
 </script></section></div>
     </div>
 
