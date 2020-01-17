@@ -24,11 +24,11 @@
 
 ## B2 Rig Upgrade
 
-Stimulus computer: 
+Ordered parts for B2 upgrade, will do it next week. 
 
- - DDR4 RAM 
- - 
-
+ - Stimulus computer: Main upgrade includes (1) 4 &rightarrow; 16 GB ram (2) SSD (3) GPU
+ - Master / eye camera computer: (1) DDR2 ram &rightarrow; DDR4 ram (2) SSD 
+ - Should also add microphones (and maybe another camera for tracking movement) soon...
 
 </script></section><section  data-markdown><script type="text/template">
 
@@ -83,7 +83,22 @@ Caveat: some planes weren't manually curated yet, so may be noisy.
 
 
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
+
+### Some neurons seem to respond strongly to a specific audio-visual pair in both repeats 
+
+subject-3-exp-1-plane-7-cell-74
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/test-audio-video-pair-cell-74.png) <!-- .element height="50%" width="80%"; -->
+
+</script></section><section data-markdown><script type="text/template">
+
+subject-3-exp-1-plane-7-cell-176 
+
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/filmworld/2p/TS003/2019-11-28/exp-2/test-audio-video-pair-cell-176.png) <!-- .element height="50%" width="80%"; -->
+
+
+</script></section></section><section  data-markdown><script type="text/template">
 
 
 # Ephys Analysis 
@@ -99,19 +114,46 @@ Caveat: some planes weren't manually curated yet, so may be noisy.
 ## Main cell types 
 
  1. Go sustained firing 
-	 - eg. subject-2-brain-loc-2-cell-20
- 2. No-go enhanced cells
-    - eg. subject-2-brain-loc-3-cell-5
+ 2. No-go enhanced 
 	- a lot also seems to respond to audio in passive condition 
- 3. Trial-onset neurons 
+ 3. Trial-onset / auditory neurons 
  4. Movement / choice-related neurons that also respond to audio in passive condition 
  5. Trial/audio onset suppressed cells 
     - suppressed: subject-3-brain-loc-1-cell-48
 	- enhanced w/ sharp peak: subject-3-brain-loc-1-cell-53
  
  </script></section><section  data-markdown><script type="text/template">
-
  
+### Go sustianed firing neurons 
+
+subject-2-brain-loc-2-cell-20
+
+![go-sustain-1](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-2/brain-area-2/exp-15/sig_idx_0_combined_exp_cell_idx_20.png)
+
+
+</script></section><section  data-markdown><script type="text/template">
+
+### No-go enhanced neurons
+
+subject-2-brain-loc-3-cell-5
+
+![no-go-enhanced-cells](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-2/brain-area-3/exp-15/sig_idx_18_combined_exp_cell_idx_5.png)
+
+</script></section><section  data-markdown><script type="text/template">
+
+### Trial-onset neurons 
+
+
+subject-2-brain-loc-3-cell-23
+
+
+![trial-onset-neuron](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-2/brain-area-3/exp-15/sig_idx_2_combined_exp_cell_idx_23.png)
+
+
+
+
+</script></section><section  data-markdown><script type="text/template">
+
 
 ## Some rare but intesting cell types
 
@@ -126,6 +168,8 @@ eg. subject-2-brain-loc-2-cell-80
  
 subject-2-brain-loc-3-cell-1
 
+![image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-2/brain-area-3/exp-15/sig_idx_4_combined_exp_cell_idx_1.png) <!-- .element height="70%" width="70%"; margin-left="auto"; margin-right="auto" -->
+
 
  
  </script></section></section><section  data-markdown><script type="text/template">
@@ -135,8 +179,6 @@ subject-2-brain-loc-3-cell-1
 subject-3-brain-loc-2-cell-21
 
 ![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/combined-alignment-subsubset-m-300p750bin80/subject-3/exp-21/brain-area-2/exp-21/sig_idx_58_combined_exp_cell_idx_21.png) <!-- .element height="70%" width="70%"; margin-left="auto"; margin-right="auto" -->
-
-
 
 
 </script></section><section  data-markdown><script type="text/template">
@@ -159,7 +201,7 @@ subject-3-brain-loc-2-cell-21
 
 ### Without PCA 
 
-
+![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_noPreprocessing.png) <!-- .element height="70%" width="70%"; -->
 
 
 </script></section><section  data-markdown><script type="text/template">
@@ -172,6 +214,8 @@ subject-3-brain-loc-2-cell-21
 </script></section><section  data-markdown><script type="text/template">
 
 ### With PCA + Whitening 
+
+(will need to smooth the firing rates)
 
 ![Image](https://timothysit.github.io/cortex-lab-weekly-reports/figures/multispaceworld-ephys/pop-analysis/mean_left_right_grid_trajectory_PCA_20_whiten.png) <!-- .element height="70%" width="70%"; -->
 
@@ -197,7 +241,10 @@ subject-3-brain-loc-2-cell-21
 
 </div> 
 
+## About demixed PCA 
 
+ - option 1: just have the stimulus dimension 
+ - option 2: stimulus dimension divided into audio and video dimension, but dPCA requires all combination of audio-visual condition to be present
 
 
 
